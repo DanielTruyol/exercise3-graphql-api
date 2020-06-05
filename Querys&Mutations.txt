@@ -1,0 +1,175 @@
+//Courses
+
+{
+  courses{
+    id
+    name
+    description
+  }
+}
+
+{
+  course(id: 1){
+    id
+    name
+    description
+  }
+}
+
+mutation{
+  addCourse(name: "NodeJs", description: "Curso De NodeJS"){
+    id
+    name
+    description
+  }
+}
+
+mutation{
+  delCourse(id: 1){
+    id
+    name
+    description
+  }
+}
+
+//Students
+
+{
+  students{
+    id
+    name
+    lastnamme
+    courseId
+  	course{
+      id
+      name
+      description
+    }
+  }
+}
+
+{
+  student(id: 5){
+    id
+    name
+    lastnamme
+    courseId
+  	course{
+      id
+      name
+      description
+    }
+  }
+}
+
+mutation{
+  addStudent(name: "estudianteX", lastnamme: "XYZ", courseId: 3){
+    id
+    name
+    lastnamme
+    courseId
+    course{
+      id
+      name
+      description
+    }
+  }
+}
+
+mutation{
+  delStudent(id: 2){
+    id
+    name
+    lastnamme
+    courseId
+    course{
+      id
+      name
+      description
+    }
+  }
+}
+
+//Grades
+
+{
+  grades{
+    id
+    courseId
+    studentId
+    grade
+    course{
+      id
+      name
+      description
+    }
+    student{
+      id
+      name
+      lastnamme
+      courseId
+    }
+    
+  }
+}
+
+{
+  grade(id: 5){
+    id
+    courseId
+    studentId
+    grade
+    course{
+      id
+      name
+      description
+    }
+    student{
+      id
+      name
+      lastnamme
+      courseId
+    }
+    
+  }
+}
+
+mutation{
+  addGrade(courseId: 1, studentId: 4, grade: 8){
+    id
+    courseId
+    studentId
+    grade
+    course{
+      id
+      name
+      description
+    }
+    student{
+      id
+      name
+      lastnamme
+      courseId
+    }
+  }
+}
+
+mutation{
+  delGrade(id: 5){
+    id
+    courseId
+    studentId
+    grade
+    student{
+      id
+      name
+      lastnamme
+      courseId
+    }
+    course{
+      id
+      name
+      description
+    }
+  }
+}

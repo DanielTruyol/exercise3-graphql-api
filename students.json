@@ -1,0 +1,26 @@
+[
+	{ 
+        "id": 1, 
+        "name": "Jose", 
+        "lastnamme": "Perez", 
+        "courseId": 2
+    },
+	{ 
+        "id": 2, 
+        "name": "Maria", 
+        "lastnamme": "Rivadero", 
+        "courseId": 2
+    },
+	{ 
+        "id": 3, 
+        "name": "Linus", 
+        "lastnamme": "Torvalds", 
+        "courseId": 3
+    },
+	{ 
+        "id": 4, 
+        "name": "Daniel", 
+        "lastnamme": "Hendrix", 
+        "courseId": 1
+    }
+]
